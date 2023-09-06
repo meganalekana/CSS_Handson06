@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 66);
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.child{
+    gap: 50px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.child1{
+    background-color: blue;
+    animation: table1 4s infinite forwards ;
+}
+@keyframes table1 {
+    0%{
+        transform: skew(20deg);
+    }
+    25%{
+        transform: skew(0deg);
+    }
+    50%{
+        transform: skew(-20deg);
+    }
+    100%{
+        transform: skew(20deg);
+    }      
+}
+.child2{
+    background-color: gray;
+    animation: table2 4s infinite forwards ;
+}
+@keyframes table2 {
+    0%{
+        transform: skewY(20deg);
+    }
+    25%{
+        transform: skewY(0deg);
+    }
+    50%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }      
+}
+.child3{
+    background-color:aqua;
+    animation: table3 4s infinite forwards ;
+}
+@keyframes table3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }      
+}
+.child4{
+    background-color: aqua;
+    animation: table4i 4s infinite forwards ;
+    border: 2px solid rgb(0, 195, 255);
+}
+@keyframes table4i {
+    0%{
+        transform: scaleY(0.5);
+    }
+    25%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }      
+}
+.child5{
+    background-color: rgb(206, 38, 38);
+    animation: table4ii 4s infinite forwards ;
+    border: 2px solid rgb(153, 46, 46);
+}
+@keyframes table4ii {
+    0%{
+        transform: scaleX(0.5);
+    }
+    25%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }      
+}
+.child6{
+    background-color: green;
+    animation: table4iii 8s infinite forwards ;
+    border: 2px solid rgb(1, 94, 1);
+}
+@keyframes table4iii {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }      
+}
+a{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+

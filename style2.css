@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 66);
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.child{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: green;
+    
+}
+.child1{
+    transition: width 4s;
+}
+.child1:hover{
+    width: 400px;
+}
+.child2{
+    transition: width 4s, height 4s;
+}
+.child2:hover{
+    width: 400px;
+    height: 400px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
